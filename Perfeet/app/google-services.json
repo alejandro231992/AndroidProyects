@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "294144802632",
+    "project_id": "perfeet-a25b8",
+    "storage_bucket": "perfeet-a25b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294144802632:android:49a052315f065a593fbd7d",
+        "android_client_info": {
+          "package_name": "upc.smtpra.perfeet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "294144802632-qo5cgqtjcdk9v8p7hdkcl1plue7lq654.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPYa1xS6Zf1TNCcDJ-o7cuagFyhtzChOo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "294144802632-qo5cgqtjcdk9v8p7hdkcl1plue7lq654.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

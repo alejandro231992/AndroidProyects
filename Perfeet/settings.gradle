@@ -1,0 +1,2 @@
+rootProject.name = "Perfeet"
+include ':app'

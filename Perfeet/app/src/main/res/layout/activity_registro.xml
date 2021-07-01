@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context="upc.smtpra.perfeet.activity.LoginActivity">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:text="PerFeet"
+                    android:layout_marginTop="40dp"/>
+
+                <LinearLayout
+                    style="@style/linearParent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:padding="@dimen/loginViewsMargin">
+
+                    <TextView
+                        style="@style/headerTextPrimary"
+                        android:text="Registro"
+                        android:layout_marginTop="@dimen/loginViewsMargin"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/signup_text_margin_top">
+                        <EditText
+                            style="@style/modifiedEditText"
+                            android:inputType="textNoSuggestions"
+                            android:id="@+id/editTextName_R"
+                            android:maxLines="1"
+                            android:hint="Nombre"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/signup_text_margin_top">
+                        <EditText
+                            style="@style/modifiedEditText"
+                            android:id="@+id/editTextEdad_R"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:hint="Edad"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/signup_text_margin_top">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Género"/>
+                        <RadioGroup
+                            android:id="@+id/radioGroupGenero_R"
+                            android:checkedButton="@+id/radioButtonGM_R"
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            style="@style/modifiedEditText"
+                            android:layout_height="match_parent">
+                        <RadioButton
+                            android:id="@+id/radioButtonGM_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="Masculino"/>
+                        <RadioButton
+                            android:id="@+id/radioButtonGF_R"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Femenino"/>
+                        </RadioGroup>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/signup_text_margin_top">
+                        <EditText
+                            style="@style/modifiedEditText"
+                            android:id="@+id/editTextPeso_R"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:hint="Peso"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/signup_text_margin_top">
+                        <EditText
+                            style="@style/modifiedEditText"
+                            android:id="@+id/editTextCelular_R"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:hint="Celular"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/signup_text_margin_top">
+                        <EditText
+                            style="@style/modifiedEditText"
+                            android:inputType="textEmailAddress|textNoSuggestions"
+                            android:id="@+id/editTextEmail_R"
+                            android:maxLines="1"
+                            android:hint="@string/login_email_hint"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/parent"
+                        android:layout_marginTop="@dimen/signup_text_margin_top">
+                        <EditText
+                            style="@style/modifiedEditText"
+                            android:hint="@string/login_password_hint"
+                            android:id="@+id/editTextPassword_R"
+                            android:maxLines="1"
+                            android:inputType="textPassword"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/cirRegisterButton"
+                        style="@style/loginButton"
+                        android:layout_gravity="center"
+                        android:text="Register" />
+
+                    <TextView
+                        style="@style/parent"
+                        android:textAlignment="center"
+                        android:id="@+id/loginText"
+                        android:textStyle="bold"
+                        android:textColor="@color/primaryTextColor"
+                        android:text="@string/signup_login_hint"
+                        android:layout_marginTop="@dimen/loginViewsMargin"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
